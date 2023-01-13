@@ -26,6 +26,7 @@ export function useLazyLoading({
         onIntersection();
       }
     }, delay),
+     // eslint-disable-next-line
     [onIntersection, containerRef, marginFromBottom, delay]
   );
 
