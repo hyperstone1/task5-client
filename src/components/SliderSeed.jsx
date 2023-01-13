@@ -1,5 +1,4 @@
 import React, { useCallback } from 'react';
-import 'toolcool-range-slider';
 import Slider from '@mui/material/Slider';
 
 const SliderSeed = ({ errProbability, setErrProbability }) => {
