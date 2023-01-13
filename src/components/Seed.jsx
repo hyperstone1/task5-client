@@ -3,7 +3,7 @@ import { TextField } from '@mui/material';
 
 const Seed = ({ seed, setSeed }) => {
   const handleChangeSeed = (e) => {
-    if (e.target.value == '') return e.preventDefault();
+    if (e.target.value === '') return e.preventDefault();
     return setSeed(parseInt(e.target.value));
   };
   return (

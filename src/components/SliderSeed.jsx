@@ -6,7 +6,7 @@ const SliderSeed = ({ errProbability, setErrProbability }) => {
     (e) => {
       setErrProbability(e.target.value);
     },
-    [errProbability],
+    [setErrProbability],
   );
 
   return (

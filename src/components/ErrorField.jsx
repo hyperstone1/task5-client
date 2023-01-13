@@ -1,5 +1,6 @@
 import React from 'react';
 import { TextField } from '@mui/material';
+
 const ErrorField = ({ errProbability, setErrProbability }) => {
   const handleChangeError = (e) => {
     if (e.target.value !== '') {

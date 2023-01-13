@@ -6,9 +6,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import { nanoid } from 'nanoid';
 import { useLazyLoading } from '../hooks/useLazyLoading';
-import { TablePagination } from '@mui/material';
 import { host } from '../constants/constants';
 import axios from 'axios';
 
@@ -50,7 +48,7 @@ const TableData = ({ seed, locale, errProbability }) => {
     } catch (err) {
       console.log(err);
     }
-  }, [users, setUsers]);
+  }, [users, setUsers, errProbability, locale, page, seed]);
 
   const [onScroll, containerRef] = useLazyLoading({
     onIntersection: appendItems,
