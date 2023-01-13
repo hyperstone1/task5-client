@@ -1,0 +1,37 @@
+.App {
+  width: 70%;
+  margin: 0 auto;
+  .container {
+    margin-top: 25%;
+    .menu_container {
+      display: flex;
+      gap: 70px;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    .css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
+      padding: 14px;
+    }
+
+    .MuiPaper-elevation {
+      height: 483px;
+      .css-1ex1afd-MuiTableCell-root {
+        text-align: center;
+      }
+      .css-1azl6jz-MuiTableCell-root {
+        text-align: center;
+      }
+      .css-177gid-MuiTableCell-root {
+        text-align: center;
+      }
+    }
+    .slider {
+      margin-bottom: 30px;
+    }
+    .seed_container {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+  }
+}
