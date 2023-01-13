@@ -15,7 +15,6 @@ const MenuLocale = ({ locale, setLocale }) => {
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
-    console.log(event.currentTarget);
   };
   const handleClickItem = (item) => {
     setLocale(item.locale);

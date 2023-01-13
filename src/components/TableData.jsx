@@ -27,16 +27,13 @@ const TableData = ({ seed, locale, errProbability }) => {
             errProb: errProbability,
             seed,
           });
-          console.log(data);
           setUsers(data);
         }
       } catch (error) {
         console.log(error);
       }
     };
-    console.log(locale);
     fetchData();
-    console.log('errProbability: ', errProbability);
   }, [locale, seed, errProbability]);
 
   const appendItems = useCallback(async () => {
@@ -54,18 +51,11 @@ const TableData = ({ seed, locale, errProbability }) => {
     }
   }, [users, setUsers]);
 
-  useEffect(() => {
-    console.log('users: ', users);
-  }, [users]);
-
   const [onScroll, containerRef] = useLazyLoading({
     onIntersection: appendItems,
     delay: 1200,
   });
 
-  useEffect(() => {
-    console.log(page);
-  }, [page]);
 
   return (
     <Paper sx={{ height: '100%' }}>

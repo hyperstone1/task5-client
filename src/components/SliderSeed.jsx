@@ -5,7 +5,6 @@ import Slider from '@mui/material/Slider';
 const SliderSeed = ({ errProbability, setErrProbability }) => {
   const handleChangeSlider = useCallback(
     (e) => {
-      console.log(e.target.value);
       setErrProbability(e.target.value);
     },
     [errProbability],
