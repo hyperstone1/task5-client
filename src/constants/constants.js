@@ -1,0 +1,1 @@
+export const host = 'https://task5-server-production-e1b8.up.railway.app'

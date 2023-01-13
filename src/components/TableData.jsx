@@ -9,6 +9,7 @@ import Paper from '@mui/material/Paper';
 import { nanoid } from 'nanoid';
 import { useLazyLoading } from '../hooks/useLazyLoading';
 import { TablePagination } from '@mui/material';
+import { host } from '../constants/constants';
 import axios from 'axios';
 
 const TableData = ({ seed, locale, errProbability }) => {
@@ -21,7 +22,7 @@ const TableData = ({ seed, locale, errProbability }) => {
         if (isNaN(seed)) {
           alert('seed must be a number!');
         } else {
-          const { data } = await axios.post('http://localhost:5000/api/user/users', {
+          const { data } = await axios.post(`${host}/api/user/users`, {
             page: 1,
             locale: locale,
             errProb: errProbability,
@@ -55,7 +56,6 @@ const TableData = ({ seed, locale, errProbability }) => {
     onIntersection: appendItems,
     delay: 1200,
   });
-
 
   return (
     <Paper sx={{ height: '100%' }}>
